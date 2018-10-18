@@ -24,13 +24,17 @@
         <processorPath useClasspath="true" />
         <module name="consumeruser" />
         <module name="eurekaserver" />
+        <module name="mongodb" />
         <module name="providerticket" />
+        <module name="redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consumeruser" target="1.8" />
       <module name="eurekaserver" target="1.8" />
+      <module name="mongodb" target="1.8" />
       <module name="providerticket" target="1.8" />
+      <module name="redis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

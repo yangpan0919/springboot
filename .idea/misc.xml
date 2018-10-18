@@ -9,8 +9,10 @@
         <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
         <option value="$PROJECT_DIR$/consumeruser/pom.xml" />
         <option value="$PROJECT_DIR$/providerticket/pom.xml" />
+        <option value="$PROJECT_DIR$/mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/redis/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" assert-keyword="false" jdk-15="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" assert-keyword="false" jdk-15="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
