@@ -3,13 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/consumeruser/consumeruser.iml" filepath="$PROJECT_DIR$/consumeruser/consumeruser.iml" />
-      <module fileurl="file://$PROJECT_DIR$/consumeruser/consumeruser.iml" filepath="$PROJECT_DIR$/consumeruser/consumeruser.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/mongodb/mongodb.iml" filepath="$PROJECT_DIR$/mongodb/mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/providerticket/providerticket.iml" filepath="$PROJECT_DIR$/providerticket/providerticket.iml" />
-      <module fileurl="file://$PROJECT_DIR$/providerticket/providerticket.iml" filepath="$PROJECT_DIR$/providerticket/providerticket.iml" />
-      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot.iml" filepath="$PROJECT_DIR$/.idea/springboot.iml" />
     </modules>

@@ -5,8 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -20,7 +25,21 @@ public class RedisController {
     @Autowired
     private RedisTemplate redisTemplate;
 
+    @RequestMapping(value = "/first", method = RequestMethod.GET)
+    public Map<String, Object> firstResp (HttpServletRequest request){
+        Map<String, Object> map = new HashMap<>();
+        request.getSession().setAttribute("request Url", request.getRequestURL());
+        map.put("request Url", request.getRequestURL());
+        return map;
+    }
 
+    @RequestMapping(value = "/sessions", method = RequestMethod.GET)
+    public Object sessions (HttpServletRequest request){
+        Map<String, Object> map = new HashMap<>();
+        map.put("sessionId", request.getSession().getId());
+        map.put("message", request.getSession().getAttribute("map"));
+        return map;
+    }
 
     /**
      stringRedisTemplate.opsForValue().set("test", "100",60*10,TimeUnit.SECONDS);//向redis里存入数据和设置缓存时间
@@ -81,7 +100,7 @@ public class RedisController {
     @GetMapping("/insertRedisPerson")
     public String insertRedisPerson(){
         Person person = new Person();
-        person.setIdNo("就是这么拽");
+        person.setIdNo("123");
         person.setUserName("小邋遢");
         person.setAge(18);
 
